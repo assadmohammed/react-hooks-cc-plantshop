@@ -2,7 +2,7 @@ import React from "react";
 
 function Search({ query, onSearch }) {
   const handleSearchChange = (e) => {
-    onSearch(e.target.value); // Update the search query in App.js
+    onSearch(e.target.value); 
   };
 
   return (

@@ -8,8 +8,8 @@ function NewPlantForm({ onAddPlant }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newPlant = { name, image, price: parseFloat(price), soldOut: false };
-    onAddPlant(newPlant); // Pass the new plant to App.js
-    setName(""); // Clear form fields
+    onAddPlant(newPlant);
+    setName(""); 
     setImage("");
     setPrice("");
   };

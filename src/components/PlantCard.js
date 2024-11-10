@@ -3,13 +3,13 @@ import React from "react";
 function PlantCard({ plant, onUpdatePlant, onDeletePlant }) {
   const { id, name, image, price, soldOut } = plant;
 
-  // Toggle sold out status
+  
   const handleToggleSoldOut = () => {
     const updatedPlant = { ...plant, soldOut: !soldOut };
     onUpdatePlant(updatedPlant);
   };
 
-  // Handle delete plant
+  
   const handleDelete = () => {
     onDeletePlant(id);
   };
